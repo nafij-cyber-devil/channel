@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>AynaOTT </title>
+    <title>AynaOTT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
-</head>
-            <style>
+    <style>
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
             background-color: #f4f4f4;
+            transition: 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: white;
         }
         .telegram-btn {
             position: fixed;
@@ -31,38 +33,53 @@
             font-weight: bold;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
             transition: 0.3s;
-            z-index: 1000; /* Ensures it's above all other content */
+            z-index: 1000;
         }
-        .telegram-btn img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
+        .telegram-btn:hover { background-color: #0077b5; }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
         }
-        .telegram-btn:hover {
-            background-color: #0077b5;
+        .toggle-dark {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #222;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header-logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .header-logo img {
+            width: 150px;
         }
     </style>
 </head>
 <body>
+    <button class="toggle-dark">Dark Mode</button>
     <a href="https://t.me/AppoloTvChat" class="telegram-btn" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="24" height="24" />
         Join Us on Telegram
     </a>
-<body>
     
-    <!-- Search Box -->
-    <div class="mb-4">
-        <div class="input-group">
+    <div class="header-logo">
+        <img src="https://raw.githubusercontent.com/nurmd2006/diploma-results/refs/heads/main/logo-2.png" alt="AynaOTT Logo">
+    </div>
+
+    <div class="container mt-4">
+        <div class="input-group mb-4">
             <input class="form-control" type="search" id="search" placeholder="Search Channels Here ..." autocomplete="off" />
             <button class="btn btn-danger" id="searchBtn">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
-    </div>
-    <!-- Channel Catalog -->
-    <div class="tv_catalog">
-        <div class="mt-5 px-3">
-            <div class="spinner-border text-light" style="width: 3rem; height: 3rem;" role="status">
+        <div class="tv_catalog text-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
@@ -70,74 +87,65 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    
     <script>
-    $(document).ready(function () {
-        loadChannels();
-
-        // সার্চ ফাংশন
-        $("#search").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $(".card").filter(function () {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        $(document).ready(function () {
+            loadChannels();
+            $("#search").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".card").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
             });
         });
-    });
 
-    // চ্যানেল লোড করার ফাংশন
-    function loadChannels() {
-        $.ajax({
-            url: "https://web.iptvbd.online/apis/aynaott/", // JSON API URL
-            type: "GET",
-            dataType: "json",
-            success: function (channels) {
-                let html = '<div class="row">';
-                channels.forEach(channel => {
-                    if (channel.streamUrl && channel.channelName) {
-                        // ডিফল্ট লোগো URL
-                        const defaultLogo = "https://i.postimg.cc/vZPP1TDz/opolo-iptv.jpg";
-                        const channelLogo = channel.logo || defaultLogo; // যদি JSON এ লোগো না থাকে, ডিফল্ট লোগো ব্যবহার করুন
-
-                        html += `
-                            <div class="col-6 col-sm-4 col-lg-3 col-xl-2" 
-                                 data-name="${channel.channelName}" 
-                                 data-link="${channel.streamUrl}" 
-                                 title="Watch ${channel.channelName} Live Stream" 
-                                 onclick="openPlayer(this)">
-                                <div align="center" class="card mt-2" title="Watch - ${channel.channelName}">
-                                    <div>
-                                        <img src="${channelLogo}" alt="${channel.channelName}" width="140" height="110" class="tvimage" />
+        function loadChannels() {
+            $.ajax({
+                url: "https://web.iptvbd.online/apis/aynaott/",
+                type: "GET",
+                dataType: "json",
+                success: function (channels) {
+                    let html = '<div class="row">';
+                    channels.forEach(channel => {
+                        if (channel.streamUrl && channel.channelName) {
+                            const defaultLogo = "https://i.postimg.cc/vZPP1TDz/opolo-iptv.jpg";
+                            const channelLogo = channel.logo || defaultLogo;
+                            html += `
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-2" 
+                                     data-name="${channel.channelName}" 
+                                     data-link="${channel.streamUrl}" 
+                                     onclick="openPlayer(this)">
+                                    <div class="card mt-2">
+                                        <img src="${channelLogo}" alt="${channel.channelName}" width="140" height="110" loading="lazy" class="tvimage" />
+                                        <div class="card-body">
+                                            <b><small>${channel.channelName}</small></b>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <div style="user-select: none;"><b><small>${channel.channelName}</small></b></div>
-                                    </div>
-                                </div>
-                            </div>`;
-                    }
-                });
-                html += '</div>';
-                $(".tv_catalog").html(html);
-            },
-            error: function () {
-                $(".tv_catalog").html('<div class="text-warning"><b>NETWORK OR INTERNAL SERVER ERROR</b></div>');
-            }
-        });
-    }
-
-    // প্লেয়ার ওপেন করার ফাংশন
-    function openPlayer(element) {
-        let channelName = $(element).attr("data-name");
-        let channelLink = $(element).attr("data-link");
-        if (channelName && channelLink) {
-            let playerLink = `player.html?channel_name=${encodeURIComponent(channelName)}&m3u8_link=${encodeURIComponent(channelLink)}`;
-            window.location.href = playerLink;
-        } else {
-            alert("Sorry, this channel is not available.");
+                                </div>`;
+                        }
+                    });
+                    html += '</div>';
+                    $(".tv_catalog").html(html);
+                },
+                error: function () {
+                    $(".tv_catalog").html('<div class="text-warning"><b>NETWORK ERROR - <button onclick="loadChannels()" class="btn btn-warning">Retry</button></b></div>');
+                }
+            });
         }
-    }
-</script>
-    
-    
+
+        function openPlayer(element) {
+            let channelName = $(element).attr("data-name");
+            let channelLink = $(element).attr("data-link");
+            if (channelName && channelLink) {
+                let playerLink = `player.html?channel_name=${encodeURIComponent(channelName)}&m3u8_link=${encodeURIComponent(channelLink)}`;
+                window.location.href = playerLink;
+            } else {
+                alert("Sorry, this channel is not available.");
+            }
+        }
+
+        document.querySelector(".toggle-dark").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>
