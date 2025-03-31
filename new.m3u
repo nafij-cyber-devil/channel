@@ -261,7 +261,7 @@ http://103.122.74.6:8888/hls/UTV.BINDASS.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", MTV BEATS HD
 http://103.122.74.6:8888/hls/MTV.BEATS.HD.m3u8
 
-#EXTINF:-1, DISCOVERY KIDS
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",, DISCOVERY KIDS
 http://103.122.74.6:8888/hls/DISCOVERY.KIDS.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", HITZ MUSIC HD
