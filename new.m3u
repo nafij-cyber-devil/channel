@@ -1,302 +1,346 @@
-
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="",WILLOW.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",WILLOW.HD
 http://103.122.74.6:8888/hls/WILLOW.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",DISNEY.JUNIAR
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",DISNEY.JUNIAR
 http://103.122.74.6:8888/hls/DISNEY.JUNIAR.m3u8
 
-#EXTINF:-1 tvg-logo="",STAR.MOVIES.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR.MOVIES.HD
 http://103.122.74.6:8888/hls/STAR.MOVIES.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",UTSHOV.GOLD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",UTSHOV.GOLD
 http://103.122.74.6:8888/hls/UTSHOV.GOLD.m3u8
 
-#EXTINF:-1 tvg-logo="",NATGEO.WILD.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",NATGEO.WILD.HD
 http://103.122.74.6:8888/hls/NATGEO.WILD.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",AND.PRIVE.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",AND.PRIVE.HD
 http://103.122.74.6:8888/hls/AND.PRIVE.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",SONY.BBC.EARTH.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SONY.BBC.EARTH.HD
 http://103.122.74.6:8888/hls/SONY.BBC.EARTH.HD.m3
 
-#EXTINF:-1 tvg-logo="",GAZI.TV.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",GAZI.TV.HD
 http://103.122.74.6:8888/hls/GAZI.TV.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",BEINSPORTS.2
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",BEINSPORTS.2
 http://103.122.74.6:8888/hls/BEINSPORTS.2.m3u8
 
-#EXTINF:-1 tvg-logo="",STAR.LIFE.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR.LIFE.HD
 http://103.122.74.6:8888/hls/STAR.LIFE.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",TRAVELXP.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",TRAVELXP.HD
 http://103.122.74.6:8888/hls/TRAVELXP.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",MN.PLUS.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",MN.PLUS.HD
 http://103.122.74.6:8888/hls/MN.PLUS.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",NICK.JR
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",NICK.JR
 http://103.122.74.6:8888/hls/NICK.JR.m3u8
 
-#EXTINF:-1 tvg-logo="",ROMEDY.NOW
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ROMEDY.NOW
 http://103.122.74.6:8888/hls/ROMEDY.NOW.m3u8
 
-#EXTINF:-1 tvg-logo="",ANT.PICTURS.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ANT.PICTURS.HD
 http://103.122.74.6:8888/hls/ANT.PICTURS.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",DISCOVERY.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",DISCOVERY.HD
 http://103.122.74.6:8888/hls/DISCOVERY.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",STAR JALSHA 2
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR JALSHA 2
 https://cdn.hoichoi24.com/StarJalsha/video.m3u8
 
-#EXTINF:-1 tvg-logo="",ENTER10 BANGLA
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ENTER10 BANGLA
 https://cdn.hoichoi24.com/Enter10Bangla/video.m3u8
 
-#EXTINF:-1 tvg-logo="",A SPORTS
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",A SPORTS
 https://cdn.hoichoi24.com/asportse/video.m3u8
 
-#EXTINF:-1 tvg-logo="",T SPORTS 1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",T SPORTS 1
 https://live.tsports.com/mobile_hls/tsports_live_1/playlist.m3
 
-#EXTINF:-1 tvg-logo="",T SPORTS 2
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",T SPORTS 2
 https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3
 
-#EXTINF:-1 tvg-logo="",T SPORTS 3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",T SPORTS 3
 https://live.tsports.com/mobile_hls/tsports_live_3/playlist.m3
 
-#EXTINF:-1 tvg-logo="",Sony MAX HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",Sony MAX HD
 http://kst.moonplex.net:8080/CH1/index.m3u8
 
-#EXTINF:-1 tvg-logo="",T Sports HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",T Sports HD
 http://kst.moonplex.net:8080/CH2/index.m3u8
 
-#EXTINF:-1 tvg-logo="",Star Jalsha HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",Star Jalsha HD
 http://kst.moonplex.net:8080/CH3/index.m3u8
 
-#EXTINF:-1 tvg-logo="",Zee Bangla HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",Zee Bangla HD
 http://kst.moonplex.net:8080/CH4/index.m3u8
 
-#EXTINF:-1 tvg-logo="",CNN HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",CNN HD
 http://kst.moonplex.net:8080/CH15/index.m3u8
 
-#EXTINF:-1 tvg-logo="",Star Jalsha
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",Star Jalsha
 http://103.122.74.6:8888/hls/starjalsha.m3u8
 
-#EXTINF:-1 tvg-logo="",Zee Bangla
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",Zee Bangla
 http://103.122.74.6:8888/hls/zeebangla.m3u8
 
-#EXTINF:-1 tvg-logo="",MOVIES.NOW.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",MOVIES.NOW.HD
 http://103.122.74.6:8888/hls/MOVIES.NOW.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",ZEE.TV.HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ZEE.TV.HD
 http://103.122.74.6:8888/hls/ZEE.TV.HD.m3u8
 
-#EXTINF:-1 tvg-logo="",SKY.SPORTS.CRICKET
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SKY.SPORTS.CRICKET
 http://103.122.74.6:8888/hls/SKY.SPORTS.CRICKET.m3u8
 
-#EXTINF:-1 tvg-logo="",LIVE EVENT
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",LIVE EVENT
 https://cdn.hoichoi24.com/LIVE/video.m3u8
 
-#EXTINF:-1 tvg-logo="",T SPORTS
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",T SPORTS
 https://cdn.hoichoi24.com/hoichoi24.com-T-sports/video.m3u8
 
-#EXTINF:-1 tvg-logo="",GAZI TV
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",GAZI TV
 https://cdn.hoichoi24.com/hoichoi24.com-Gazi-TV/video.m3u8
 
-#EXTINF:-1 tvg-logo="",NAGORIK TV
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",NAGORIK TV
 https://cdn.hoichoi24.com/Nagorik-TV-Hoichoi24.com/video.m3u
 
-#EXTINF:-1 tvg-logo="",SPORTS 18
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SPORTS 18
 https://cdn.hoichoi24.com/SP-sports-18-hoichoi24.com/video.m3u8
 
-#EXTINF:-1 tvg-logo="",JAMUNA TV
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",JAMUNA TV
 https://cdn.hoichoi24.com/JamunaTV/video.m3u8
-#EXTINF:-1 tvg-name="STAR JALSHA 2",STAR JALSHA 2
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR JALSHA 2
 https://cdn.hoichoi24.com/StarJalsha/video.m3u8
 
-#EXTINF:-1 tvg-name="SONY AAT",SONY AAT
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SONY AAT
 http://103.122.74.6:8888/hls/SONY.AAT.m3u8
 
-#EXTINF:-1 tvg-name="STAR SPORTS SEL 2 HD",STAR SPORTS SEL 2 HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR SPORTS SEL 2 HD
 http://103.122.74.6:8888/hls/STAR.SPORTS.SEL.2.HD.m3u8
 
-#EXTINF:-1 tvg-name="BBC NEWS",BBC NEWS
-http://103.122.74.6:8888/hls/BBC.NEWS.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",BBC 
+NEWShttp://103.122.74.6:8888/hls/BBC.NEWS.m3u8
 
-#EXTINF:-1 tvg-name="STAR BARAT HD",STAR BARAT HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR BARAT HD
 http://103.122.74.6:8888/hls/STAR.BARAT.HD.m3u8
 
-#EXTINF:-1 tvg-name="SONY MAX HD",SONY MAX HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SONY MAX HD
 http://103.122.74.6:8888/hls/SONY.MAX.HD.m3u8
 
-#EXTINF:-1 tvg-name="ANIMAL PLANET HD",ANIMAL PLANET HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ANIMAL PLANET HD
 http://103.122.74.6:8888/hls/ANIMAL.PLANET.HD.m3u8
 
-#EXTINF:-1 tvg-name="LOVE NATURE HD",LOVE NATURE HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",LOVE NATURE HD
 http://103.122.74.6:8888/hls/LOVE.NATURE.HD.m3u8
 
-#EXTINF:-1 tvg-name="SONY10",SONY10
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SONY10
 http://103.122.74.6:8888/hls/sony10.m3u8
 
-#EXTINF:-1 tvg-name="POGO",POGO
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",POGO
 http://103.122.74.6:8888/hls/POGO.m3u8
 
-#EXTINF:-1 tvg-name="COLORS CINEPLEX HD",COLORS CINEPLEX HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",COLORS CINEPLEX HD
 http://103.122.74.6:8888/hls/COLORS.CINEPLEX.HD.m3u8
 
-#EXTINF:-1 tvg-name="GOLF SPORTS",GOLF SPORTS
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",GOLF SPORTS
 http://103.122.74.6:8888/hls/GOLF.SPORTS.m3u8
 
-#EXTINF:-1 tvg-name="SUPER CRICKET HD",SUPER CRICKET HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SUPER CRICKET HD
 http://103.122.74.6:8888/hls/SUPER.CRICKET.HD.m3u8
 
-#EXTINF:-1 tvg-name="SONY ENT HD",SONY ENT HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",SONY ENT HD
 http://103.122.74.6:8888/hls/SONY.ENT.HD.m3u8
 
-#EXTINF:-1 tvg-name="CINEMAX HD",CINEMAX HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",CINEMAX HD
 http://103.122.74.6:8888/hls/CINEMAX.HD.m3u8
 
-#EXTINF:-1 tvg-name="T SPORTS HD",T SPORTS HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",T SPORTS HD
 http://103.122.74.6:8888/hls/T-SPORTS-HD.m3u8
 
-#EXTINF:-1 tvg-name="EUROSPORTS HD",EUROSPORTS HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",EUROSPORTS HD
 http://103.122.74.6:8888/hls/EUROSPORTS.HD.m3u8
 
-#EXTINF:-1 tvg-name="ETV BAL BHARAT",ETV BAL BHARAT
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ETV BAL BHARAT
 http://103.122.74.6:8888/hls/ETV.BAL.BHARAT.m3u8
 
-#EXTINF:-1 tvg-name="ZING MUSIC",ZING MUSIC
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ZING MUSIC
 http://103.122.74.6:8888/hls/ZING.MUSIC.m3u8
 
-#EXTINF:-1 tvg-name="STAR GOLD HD",STAR GOLD HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR GOLD HD
 http://103.122.74.6:8888/hls/STAR.GOLD.HD.m3u8
 
-#EXTINF:-1 tvg-name="CNBC NEWS",CNBC NEWS
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",CNBC NEWS
 http://103.122.74.6:8888/hls/CNBC.NEWS.m3u8
 
-#EXTINF:-1 tvg-name="ASTRO CRICKET",ASTRO CRICKET
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ASTRO CRICKET
 http://103.122.74.6:8888/hls/ASTRO.CRICKET.m3u8
 
-#EXTINF:-1 tvg-name="BEIN SPORTS 1",BEIN SPORTS 1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",BEIN SPORTS 1
 http://103.122.74.6:8888/hls/BEINSPORTS.1.m3u8
 
-#EXTINF:-1 tvg-name="DISNEY INT HD",DISNEY INT HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",DISNEY INT HD
 http://103.122.74.6:8888/hls/DISNEY.INT.HD.m3u8
 
-#EXTINF:-1 tvg-name="STAR JALSHA HD",STAR JALSHA HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR JALSHA HD
 http://103.122.74.6:8888/hls/STAR.JALSHA.HD.m3u8
 
-#EXTINF:-1 tvg-name="NAGORIK TV HD",NAGORIK TV HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",NAGORIK TV HD
 http://103.122.74.6:8888/hls/NAGORIK.TV.HD.m3u8
 
-#EXTINF:-1 tvg-name="COLORS HD",COLORS HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",COLORS HD
 http://103.122.74.6:8888/hls/COLORS.HD.m3u8
 
-#EXTINF:-1 tvg-name="HBO HITS",HBO HITS
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",HBO HITS
 http://103.122.74.6:8888/hls/HBO.HITS.m3u8
 
-#EXTINF:-1 tvg-name="HUNGAMA",HUNGAMA
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",HUNGAMA
 http://103.122.74.6:8888/hls/HUNGAMA.m3u8
 
-#EXTINF:-1 tvg-name="ROCK ENT HD",ROCK ENT HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",ROCK ENT HD
 http://103.122.74.6:8888/hls/ROCK.ENT.HD.m3u8
 
-#EXTINF:-1 tvg-name="MTV LIVE HD",MTV LIVE HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",MTV LIVE HD
 http://103.122.74.6:8888/hls/MTV.LIVE.HD.m3u8
 
-#EXTINF:-1 tvg-name="STAR SPORTS SEL1 HD",STAR SPORTS SEL1 HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",STAR SPORTS SEL1 HD
 http://103.122.74.6:8888/hls/STAR.SPORTS-SEL1.HD.m3u8
 
-#EXTINF:-1 tvg-name="XPLOR HD",XPLOR HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png",XPLOR HD
 http://103.122.74.6:8888/hls/XPLOR.HD.m3u8
-#EXTINF:-1, STAR SPORTS 3
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR SPORTS 3
 http://103.122.74.6:8888/hls/STAR-SPORTS.3.m3u8
-#EXTINF:-1, AND FLIX HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", AND FLIX HD
 http://103.122.74.6:8888/hls/AND.FLIX.HD.m3u8
-#EXTINF:-1, THE PAPARE HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", THE PAPARE HD
 http://103.122.74.6:8888/hls/THE.PAPARE.HD.m3u8
-#EXTINF:-1, JALSHA MOVIES HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", JALSHA MOVIES HD
 http://103.122.74.6:8888/hls/JALSHA.MOVIES.HD.m3u8
-#EXTINF:-1, COLOR INFINITY HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", COLOR INFINITY HD
 http://103.122.74.6:8888/hls/COLOR.INFINITY.HD.m3u8
-#EXTINF:-1, CARTON NETWORK HD
-http://103.122.74.6:8888/hls/CARTON.NETWORK.HD.m3u
-#EXTINF:-1, SONY SPORTS 5HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", CARTON NETWORK HD
+http://103.122.74.6:8888/hls/CARTON.NETWORK.HD.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SONY SPORTS 5HD
 http://103.122.74.6:8888/hls/SONY-SPORTS.5HD.m3u8
-#EXTINF:-1, PREMER SPORTS HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", PREMER SPORTS HD
 http://103.122.74.6:8888/hls/PREMER.SPORTS.HD.m3u8
-#EXTINF:-1, ZEE BANGLA HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", ZEE BANGLA HD
 http://103.122.74.6:8888/hls/ZEE.BANGLA.HD.m3u8
-#EXTINF:-1, SONY SPORTS 1HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SONY SPORTS 1HD
 http://103.122.74.6:8888/hls/SONY.SPORTS.1HD.m3u8
-#EXTINF:-1, BBC CBABES HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", BBC CBABES HD
 http://103.122.74.6:8888/hls/BBC.CBABES.HD.m3u8
-#EXTINF:-1, CNN
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", CNN
 http://103.122.74.6:8888/hls/CNN.m3u8
-#EXTINF:-1, BBC LIFESTYLE HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", BBC LIFESTYLE HD
 http://103.122.74.6:8888/hls/BBC.LIFESTYLE.HD.m3u8
-#EXTINF:-1, ZOOM MUSIC
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", ZOOM MUSIC
 http://103.122.74.6:8888/hls/ZOOM.MUSIC.m3u8
-#EXTINF:-1, UTV BINDASS
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", UTV BINDASS
 http://103.122.74.6:8888/hls/UTV.BINDASS.m3u8
-#EXTINF:-1, MTV BEATS HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", MTV BEATS HD
 http://103.122.74.6:8888/hls/MTV.BEATS.HD.m3u8
+
 #EXTINF:-1, DISCOVERY KIDS
 http://103.122.74.6:8888/hls/DISCOVERY.KIDS.m3u8
-#EXTINF:-1, HITZ MUSIC HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", HITZ MUSIC HD
 http://103.122.74.6:8888/hls/HITZ.MUSIC.HD.m3u8
-#EXTINF:-1, STAR PLUS HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR PLUS HD
 http://103.122.74.6:8888/hls/STAR.PLUS.HD.m3u8
-#EXTINF:-1, HBO HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", HBO HD
 http://103.122.74.6:8888/hls/HBO.HD.m3u8
-#EXTINF:-1, SONY PIX HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SONY PIX HD
 http://103.122.74.6:8888/hls/SONY.PIX.HD.m3u8
-#EXTINF:-1, STAR SPORTS 2 HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR SPORTS 2 HD
 http://103.122.74.6:8888/hls/STAR.SPORTS2.HD.m3u8
-#EXTINF:-1, SONY SPORTS 1 HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SONY SPORTS 1 HD
 http://103.122.74.6:8888/hls/SONY.SPORTS1.HD.m3u8
-#EXTINF:-1, STAR SPORTS 1 HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR SPORTS 1 HD
 http://103.122.74.6:8888/hls/STAR.SPORTS1.HD.m3u8
-#EXTINF:-1, SUN BANGLA HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SUN BANGLA HD
 http://103.122.74.6:8888/hls/SUN.BANGLA.HD.m3u8
-#EXTINF:-1, STAR GOLD SEL HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR GOLD SEL HD
 http://103.122.74.6:8888/hls/STAR.GOLD.SEL.HD.m3u8
-#EXTINF:-1, ID HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", ID HD
 http://103.122.74.6:8888/hls/ID.HD.m3u8
-#EXTINF:-1, NATGEO HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", NATGEO HD
 http://103.122.74.6:8888/hls/NATGEO.HD.m3u8
-#EXTINF:-1, AXN HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", AXN HD
 http://103.122.74.6:8888/hls/AXN.HD.m3u8
-#EXTINF:-1, DURANTA TV HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", DURANTA TV HD
 http://103.122.74.6:8888/hls/DURANTA.TV.HD.m3u8
-#EXTINF:-1, BEIN SPORT 3
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", BEIN SPORT 3
 http://103.122.74.6:8888/hls/BEIN.SPORT.3.m3u8
-#EXTINF:-1, STAR MOVIES SEL HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR MOVIES SEL HD
 http://103.122.74.6:8888/hls/STAR.MOVIES.SEL.HD.m3u8
-#EXTINF:-1, TLC HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", TLC HD
 http://103.122.74.6:8888/hls/TLC.HD.m3u8
-#EXTINF:-1, DISCOVERY TURBO
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", DISCOVERY TURBO
 http://103.12274.6:8888/hls/DISCOVARY.TURBO.m3u8
-#EXTINF:-1, ZEE CINEMA HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", ZEE CINEMA HD
 http://103.122.74.6:8888/hls/ZEE.CINEMA.HD.m3u8
-#EXTINF:-1, BBC EARTH HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", BBC EARTH HD
 http://103.122.74.6:8888/hls/BBC.Earth.HD.m3u8
-#EXTINF:-1, STAR GOLD 2 HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", STAR GOLD 2 HD
 http://103.122.74.6:8888/hls/STAR.GOLD.2HD.m3u8
-#EXTINF:-1, HISTORY TV18 HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", HISTORY TV18 HD
 http://103.122.74.6:8888/hls/HISTORY.TV.18.HD.m3u8
-#EXTINF:-1, ZEE CAFE HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", ZEE CAFE HD
 http://103.122.74.6:8888/hls/ZEE.CAFE.HD.m3u8
-#EXTINF:-1, SONY SPORTS 3
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SONY SPORTS 3
 http://103.122.74.6:8888/hls/SONY.SPORTS.3.m3u8
-#EXTINF:-1, MNX HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", MNX HD
 http://103.122.74.6:8888/hls/MNX.HD.m3u8
-#EXTINF:-1, COLORS BANGLA HD
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", COLORS BANGLA HD
 http://103.122.74.6:8888/hls/COLORS.BANGLA.HD.m3u8
-#EXTINF:-1, SONIC
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", SONIC
 http://103.122.74.6:8888/hls/SONIC.m3u8
-#EXTINF:-1, NICK
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Z7LgC8v/live-stream-bd.png", NICK
 http://103.122.74.6:8888/hls/NICK.m3u8
