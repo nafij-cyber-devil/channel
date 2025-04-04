@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support | TCS Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --success-color: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .main-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+        }
+        
+        .login-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+            overflow-y: auto;
+        }
+        
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .chat-header {
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .chat-header h3 {
+            margin: 0;
+            flex: 1;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .back-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            left: 15px;
+        }
+        
+        .chat-status {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            position: absolute;
+            right: 15px;
+        }
+        
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--success-color);
+            margin-right: 5px;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background-color: #fafafa;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 18px;
+            position: relative;
+            animation: fadeIn 0.3s ease;
+            word-wrap: break-word;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user-message {
+            background-color: var(--secondary-color);
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .admin-message {
+            background-color: #e3e3e3;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .message-time {
+            font-size: 10px;
+            color: rgba(255,255,255,0.8);
+            margin-top: 5px;
+            text-align: right;
+        }
+        
+        .admin-message .message-time {
+            color: #777;
+        }
+        
+        .chat-input {
+            padding: 10px 15px;
+            border-top: 1px solid #eee;
+            background-color: white;
+        }
+        
+        .input-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        #message-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            outline: none;
+            font-size: 14px;
+        }
+        
+        #send-button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+            width: 100%;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .support-info {
+            background-color: var(--light-color);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .support-info p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .support-info i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        /* Typing indicator */
+        .typing-indicator {
+            display: flex;
+            padding: 10px 15px;
+            background-color: #e3e3e3;
+            border-radius: 18px;
+            margin-bottom: 15px;
+            width: fit-content;
+            align-items: center;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #777;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+        
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes typingAnimation {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-5px); }
+        }
+        
+        /* Welcome message in chat */
+        .welcome-message {
+            padding: 15px;
+            text-align: center;
+            background-color: var(--light-color);
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        .welcome-message h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .login-form {
+                padding: 20px;
+            }
+            
+            .form-control {
+                padding: 10px 12px;
+            }
+            
+            .message {
+                max-width: 90%;
+                padding: 8px 12px;
+            }
+            
+            .chat-header h3 {
+                font-size: 16px;
+                padding: 0 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-headset"></i>
+            <span>TCS Support</span>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div id="login-section" class="login-container">
+            <div class="login-form">
+                <div class="form-title">
+                    <h2>Start a Conversation</h2>
+                    <p>Our support team is ready to help you</p>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+                <button id="start-chat-btn" class="btn">Start Chat</button>
+                
+                <div class="support-info">
+                    <p><i class="fas fa-info-circle"></i> For immediate assistance, contact us at:</p>
+                    <p><i class="fab fa-telegram"></i> <a href="https://t.me/termux_command_store">TERMUX COMMAND STORE</a></p>
+                    <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/share/12KymmpFuKH/">TERMUX COMMAND STORE</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="chat-section" class="hidden">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <button class="back-button" id="back-button">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <h3 id="chat-title">Support Chat</h3>
+                    <div class="chat-status">
+                        <span class="status-indicator"></span>
+                        <span>Online</span>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chat-messages">
+                    <div class="welcome-message">
+                        <h3>Welcome to TCS Support</h3>
+                        <p>We're here to help you with any questions or issues. Our team will respond as soon as possible.</p>
+                    </div>
+                </div>
+                
+                <div class="chat-input">
+                    <div class="input-group">
+                        <input type="text" id="message-input" placeholder="Type your message...">
+                        <button id="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Store chat data
+        let chatData = {
+            name: '',
+            phone: '',
+            chatId: '',
+            lastChecked: 0,
+            isFirstMessage: true
+        };
+        
+        // DOM elements
+        const loginSection = document.getElementById('login-section');
+        const chatSection = document.getElementById('chat-section');
+        const chatMessages = document.getElementById('chat-messages');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const startChatBtn = document.getElementById('start-chat-btn');
+        const backButton = document.getElementById('back-button');
+        const chatTitle = document.getElementById('chat-title');
+        
+        // Initialize chat
+        startChatBtn.addEventListener('click', function() {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            
+            if (name && phone) {
+                chatData.name = name;
+                chatData.phone = phone;
+                chatTitle.textContent = `Chat with TCS Support`;
+                
+                // Check for existing chat
+                checkExistingChat(name, phone)
+                    .then(chatId => {
+                        chatData.chatId = chatId;
+                        loginSection.classList.add('hidden');
+                        chatSection.classList.remove('hidden');
+                        loadChatHistory(chatId);
+                        startPolling();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Failed to start chat. Please try again.');
+                    });
+            } else {
+                alert('Please enter both your name and phone number');
+            }
+        });
+        
+        // Back button to return to login
+        backButton.addEventListener('click', function() {
+            chatSection.classList.add('hidden');
+            loginSection.classList.remove('hidden');
+            sessionStorage.removeItem('chat_name');
+            sessionStorage.removeItem('chat_phone');
+        });
+        
+        // Send message
+        function sendMessage() {
+            const message = messageInput.value.trim();
+            if (message) {
+                // Display user message immediately
+                displayMessage(message, 'user-message', new Date());
+                messageInput.value = '';
+                
+                // Prepare form data
+                const formData = new FormData();
+                formData.append('action', 'send_message');
+                formData.append('name', chatData.name);
+                formData.append('phone', chatData.phone);
+                formData.append('message', message);
+                
+                // Send to server
+                fetch('chat_handler.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        if (chatData.isFirstMessage) {
+                            // Display automatic reply for first message
+                            displayMessage('ASSALAMUALAIKUM, admin has been notified. He will be able to reply you soon. For fast reply message at https://t.me/TCS_DEMONIC', 'admin-message', new Date());
+                            chatData.isFirstMessage = false;
+                        }
+                        // Update last checked time
+                        chatData.lastChecked = Math.floor(Date.now() / 1000);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        }
+        
+        // Event listeners for sending
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Check for existing chat
+        function checkExistingChat(name, phone) {
+            return new Promise((resolve, reject) => {
+                const formData = new FormData();
+                formData.append('action', 'check_chat');
+                formData.append('name', name);
+                formData.append('phone', phone);
+                
+                fetch('chat_handler.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.exists) {
+                        chatData.isFirstMessage = false;
+                        resolve(data.chat_id);
+                    } else {
+                        // Create new chat ID
+                        resolve(generateChatId(phone));
+                    }
+                })
+                .catch(error => reject(error));
+            });
+        }
+        
+        // Generate chat ID (matches server-side)
+        function generateChatId(phone) {
+            return 'chat_' + md5(phone) + '.json';
+        }
+        
+        // Simple MD5 function for demo purposes
+        function md5(input) {
+            // This is a simplified version for demo - in production use a proper MD5 library
+            return btoa(encodeURIComponent(input).replace(/%([0-9A-F]{2})/g, 
+                function toSolidBytes(match, p1) {
+                    return String.fromCharCode('0x' + p1);
+                }));
+        }
+        
+        // Load chat history
+        function loadChatHistory(chatId) {
+            const formData = new FormData();
+            formData.append('action', 'load_chat');
+            formData.append('chat_id', chatId);
+            
+            fetch('chat_handler.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.messages) {
+                    // Remove welcome message if there are existing messages
+                    if (data.messages.length > 0) {
+                        const welcomeMsg = document.querySelector('.welcome-message');
+                        if (welcomeMsg) {
+                            welcomeMsg.remove();
+                        }
+                    }
+                    
+                    data.messages.forEach(msg => {
+                        const date = new Date(msg.timestamp * 1000);
+                        const className = msg.sender === 'user' ? 'user-message' : 'admin-message';
+                        displayMessage(msg.text, className, date);
+                    });
+                    
+                    // Update last checked time
+                    if (data.messages.length > 0) {
+                        chatData.lastChecked = data.messages[data.messages.length - 1].timestamp;
+                    }
+                    
+                    // Scroll to bottom
+                    setTimeout(() => {
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }, 100);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
+        // Display message in chat
+        function displayMessage(text, className, date) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', className);
+            
+            const messageText = document.createElement('div');
+            messageText.textContent = text;
+            
+            const messageTime = document.createElement('div');
+            messageTime.classList.add('message-time');
+            messageTime.textContent = formatTime(date);
+            
+            messageDiv.appendChild(messageText);
+            messageDiv.appendChild(messageTime);
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Format time
+        function formatTime(date) {
+            if (!(date instanceof Date)) {
+                return '';
+            }
+            return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+        
+        // Poll for new messages
+        function startPolling() {
+            setInterval(() => {
+                checkForNewMessages();
+            }, 3000); // Check every 3 seconds
+        }
+        
+        // Check for new messages
+        function checkForNewMessages() {
+            if (!chatData.chatId) return;
+            
+            const formData = new FormData();
+            formData.append('action', 'check_new_messages');
+            formData.append('chat_id', chatData.chatId);
+            formData.append('last_checked', chatData.lastChecked);
+            
+            fetch('chat_handler.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.new_messages && data.new_messages.length > 0) {
+                    data.new_messages.forEach(msg => {
+                        if (msg.sender === 'admin') {
+                            const date = new Date(msg.timestamp * 1000);
+                            displayMessage(msg.text, 'admin-message', date);
+                        }
+                    });
+                    
+                    // Update last checked time
+                    chatData.lastChecked = data.new_messages[data.new_messages.length - 1].timestamp;
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
+        // Restore chat if page is reloaded
+        window.addEventListener('load', () => {
+            const name = sessionStorage.getItem('chat_name');
+            const phone = sessionStorage.getItem('chat_phone');
+            
+            if (name && phone) {
+                chatData.name = name;
+                chatData.phone = phone;
+                chatTitle.textContent = `Chat with TCS Support`;
+                
+                checkExistingChat(name, phone)
+                    .then(chatId => {
+                        chatData.chatId = chatId;
+                        loginSection.classList.add('hidden');
+                        chatSection.classList.remove('hidden');
+                        loadChatHistory(chatId);
+                        startPolling();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        sessionStorage.removeItem('chat_name');
+                        sessionStorage.removeItem('chat_phone');
+                    });
+            }
+        });
+        
+        // Store chat data in session
+        window.addEventListener('beforeunload', () => {
+            if (chatData.name && chatData.phone) {
+                sessionStorage.setItem('chat_name', chatData.name);
+                sessionStorage.setItem('chat_phone', chatData.phone);
+            }
+        });
+    </script>
+</body>
+</html>
